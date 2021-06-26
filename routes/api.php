@@ -64,3 +64,7 @@ Route::put('/room/{roomKey}/tasks/{taskId}', function (Request $request, $roomKe
 
     $task->save();
 });
+
+Route::get('/ping', function () {
+    return 'pong';
+});
